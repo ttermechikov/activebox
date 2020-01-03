@@ -1,0 +1,58 @@
+.masthead {
+  padding: 256px 0px 156px;
+  background-image: url("../img/bg--header.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media (max-width: @desktop-width) {
+    padding: 192px 0px 104px;
+  }
+  @media (max-width: @tablet-width) {
+    padding: 128px 0px 69px;
+  }
+
+  &__title {
+    max-width: 855px;
+    margin: auto;
+    margin-bottom: 41px;
+    font-size: 65px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 65px;
+    text-align: center;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 27px;
+      font-size: 43px;
+      line-height: 1;
+    }
+    @media (max-width: @tablet-width) {
+      margin-bottom: 18px;
+      font-size: 29px;
+    }
+  }
+
+  &__description {
+    max-width: 912px;
+    margin: 0 auto;
+    margin-bottom: 77px;
+    font-size: 22px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 51px;
+      font-size: 14px;
+      max-width: 608px;
+    }
+    @media (max-width: @tablet-width) {
+      margin-bottom: 34px;
+      max-width: 90%;
+      font-size: 1.1rem;
+    }
+  }
+}

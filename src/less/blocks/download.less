@@ -1,0 +1,42 @@
+.download {
+  padding: 100px 0px;
+  text-align: center;
+  line-height: 1;
+  color: rgb(45, 48, 51);
+
+  @media (max-width: @desktop-width) {
+    padding: 67px 0px;
+  }
+  @media (max-width: @tablet-width) {
+    max-width: 90%;
+    margin: 0px auto;
+  }
+
+  &__title {
+    margin: 0px 0px 16px 0px;
+    font-size: 28px;
+    font-family: "RalewayLight";
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 11px;
+      font-size: 19px;
+    }
+    @media (max-width: @tablet-width) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__lead {
+    margin: 0px 0px 40px 0px;
+    font-size: 13px;
+    font-family: "RalewayBold";
+    text-transform: uppercase;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 27px;
+    }
+    @media (max-width: @tablet-width) {
+      margin-bottom: 18px;
+    }
+  }
+}

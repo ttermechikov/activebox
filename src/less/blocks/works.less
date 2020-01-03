@@ -1,0 +1,57 @@
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 1.2;
+
+  &__example {
+    display: flex;
+    padding: 1px;
+    position: relative;
+    width: 25%;
+
+    @media (max-width: @desktop-width) {
+      display: inline-block;
+      width: 50%;
+      margin: 0 auto;
+      padding: 10px 0px;
+    }
+    @media (max-width: @tablet-width) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 5px 0px;
+    }
+  }
+
+  &__example:hover {
+    .hidden {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__lead {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #e75250;
+    opacity: 0.85;
+  }
+
+  &__title {
+    font-family: "RalewayBold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: "RalewayRegular";
+    color: rgb(255, 255, 255);
+  }
+}

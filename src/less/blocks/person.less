@@ -1,0 +1,79 @@
+.person {
+  max-width: 270px;
+  font-family: "RalewayRegular";
+
+  @media (max-width: @desktop-width) {
+    max-width: 50%;
+    text-align: center;
+    margin-bottom: 33px;
+  }
+  @media (max-width: @tablet-width) {
+    max-width: 100%;
+    margin-bottom: 22px;
+  }
+
+  &__photo {
+    margin-bottom: 30px;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: @tablet-width) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 11px;
+    font-size: 22px;
+    color: rgb(45, 48, 51);
+    line-height: 1;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 7.3px;
+      font-size: 15px;
+    }
+  }
+
+  &__profession {
+    margin-bottom: 29px;
+    font-size: 13px;
+    color: rgb(232, 69, 69);
+    text-transform: uppercase;
+    line-height: 0.8;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 19px;
+    }
+    @media (max-width: @tablet-width) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__about {
+    margin-bottom: 31px;
+    font-size: 14px;
+    color: rgb(108, 114, 121);
+    line-height: 1.4;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 21px;
+      text-align: center;
+      width: 90%;
+      margin-left: 5%;
+    }
+    @media (max-width: @tablet-width) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    transition: all 0.5s ease;
+    max-height: 40px;
+  }
+
+  &__link:hover {
+    transform: scale(1.1);
+  }
+}

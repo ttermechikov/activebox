@@ -1,0 +1,31 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 13px;
+  font-family: "RalewaySemibold";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.615;
+  border-radius: 2px;
+  background-color: rgb(232, 69, 69);
+
+  &--header {
+    width: 200px;
+    height: 46px;
+
+    @media (max-width: @tablet-width) {
+      width: 300px;
+    }
+  }
+
+  &--download {
+    width: 280px;
+    height: 46px;
+  }
+
+  &:hover {
+    background-color: darken(rgb(232, 69, 69), 5%);
+  }
+}

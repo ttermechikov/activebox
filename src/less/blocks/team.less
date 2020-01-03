@@ -1,0 +1,19 @@
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 100px 0px;
+
+  @media (max-width: @desktop-width) {
+    justify-content: center;
+    max-width: 90%;
+    padding: 66px 0px;
+  }
+  @media (max-width: @tablet-width) {
+    justify-content: center;
+    max-width: 90%;
+    padding: 44px 0px;
+  }
+}
